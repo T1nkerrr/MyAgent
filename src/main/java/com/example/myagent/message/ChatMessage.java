@@ -3,15 +3,14 @@ package com.example.myagent.message;
 import com.example.myagent.mask.Mask;
 import com.example.myagent.session.Session;
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.JoinColumn;
-import jakarta.persistence.ManyToOne;
+import jakarta.persistence.*;
 
 @Entity
 public class ChatMessage {
     @Id//主键
     private String id;
+
+    @Column(length=1000)
 
     private String content;
 

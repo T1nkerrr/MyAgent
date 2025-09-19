@@ -37,6 +37,9 @@ public class SessionController {
         Session session = sessionRepository.findById(sessionId).get();
         message.setSession(session);
         chatMessageRepository.save(message);
+        // 使用message的date更新session的lastUpdate
+        session.setLastUpdate(message.getDate());
+        sessionRepository.save(session);
         return "Saved";
     }
 }
