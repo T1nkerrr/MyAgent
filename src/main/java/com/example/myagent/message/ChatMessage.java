@@ -10,7 +10,7 @@ public class ChatMessage {
     @Id//主键
     private String id;
 
-    @Column(length=1000)
+    @Column(length=5000)//单段对话的长度限制
 
     private String content;
 
