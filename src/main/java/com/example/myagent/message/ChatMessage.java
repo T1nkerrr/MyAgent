@@ -16,7 +16,7 @@ public class ChatMessage {
 
     private String role;//角色：用户/AI
 
-    private String date;
+    private Long date;
 
     @ManyToOne
     @JoinColumn(name = "mask_id")//如果是某个面具的提示词，那么记下面具的id
@@ -52,11 +52,11 @@ public class ChatMessage {
         this.role = role;
     }
 
-    public String getDate() {
+    public Long getDate() {
         return date;
     }
 
-    public void setDate(String date) {
+    public void setDate(Long date) {
         this.date = date;
     }
 

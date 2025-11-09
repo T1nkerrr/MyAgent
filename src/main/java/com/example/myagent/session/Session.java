@@ -11,9 +11,9 @@ public class Session {
     @Id//主键
     private String id;
 
-    private String createTime;
+    private Long createTime;
 
-    private String lastUpdate;
+    private Long lastUpdate;
 
     private String topic;//会话名称：直接使用面具名称
 
@@ -32,19 +32,19 @@ public class Session {
         this.id = id;
     }
 
-    public String getCreateTime() {
+    public Long getCreateTime() {
         return createTime;
     }
 
-    public void setCreateTime(String createTime) {
+    public void setCreateTime(Long createTime) {
         this.createTime = createTime;
     }
 
-    public String getLastUpdate() {
+    public Long getLastUpdate() {
         return lastUpdate;
     }
 
-    public void setLastUpdate(String lastUpdate) {
+    public void setLastUpdate(Long lastUpdate) {
         this.lastUpdate = lastUpdate;
     }
 
