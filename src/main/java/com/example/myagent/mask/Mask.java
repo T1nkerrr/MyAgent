@@ -8,7 +8,7 @@ import java.util.List;
 @Entity
 public class Mask {
     @Id//主键
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.AUTO)//id自动生成
     private Long id;
 
     private String name;
