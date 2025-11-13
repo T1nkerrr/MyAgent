@@ -8,7 +8,7 @@ CREATE TABLE `user`  (
 ) ENGINE = InnoDB CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Compact;
 
 -- ----------------------------
--- Records of t_user
+-- Records of user
 -- ----------------------------
 INSERT INTO `user` VALUES (1, '001',  '123456',  '2025-11-9 17:06:53');
 INSERT INTO `user` VALUES (2, '002',  '123456',  '2025-11-9 17:07:12');
