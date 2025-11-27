@@ -1,6 +1,10 @@
 package com.example.myagent.order;
 
-import org.springframework.data.repository.CrudRepository;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.jpa.repository.JpaRepository;
 
-public interface OrderRepository extends CrudRepository<Order, String> {
+
+public interface OrderRepository extends JpaRepository<OrderInfo, String> {
+    Page<OrderInfo> findAllByEmail(String email, Pageable pageable);
 }

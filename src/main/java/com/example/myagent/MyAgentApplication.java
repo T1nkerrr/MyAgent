@@ -7,11 +7,13 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cache.annotation.EnableCaching;
+import org.springframework.scheduling.annotation.EnableScheduling;
 
 import java.util.Date;
 
 @SpringBootApplication
 @EnableCaching //启用缓存
+@EnableScheduling
 public class MyAgentApplication {
 
     @Autowired

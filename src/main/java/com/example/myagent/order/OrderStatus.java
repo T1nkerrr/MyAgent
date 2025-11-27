@@ -1,10 +1,10 @@
 package com.example.myagent.order;
 
 public enum OrderStatus {
-    UNPAID(1),//未付款
-    PAID(2),//已付款
-    FINISHED(3),//已完成
-    CANCELED(4);//已取消
+    UNPAID(0),//未付款
+    PAID(1),//已付款
+    FINISHED(2),//已完成
+    CANCELLED(3);//已取消
 
     private final int code;
 
